@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全國動物認領養</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <section class="warp">
+        <!-- 頭部區域 -->
+        <header class="header">動物收容系統</header>
+        <!-- 導航欄 -->
+        <nav class="nav">
+            <a href="javascript:;" class="item">
+                <img src="./icons/icon1.png" alt="">
+                <span>收容公告</span>
+            </a>
+            <a href="javascript:;" class="item">
+                <img src="./icons/icon2.png" alt="">
+                <span>動物認領養</span>
+            </a>
+            <a href="javascript:;" class="item">
+                <img src="./icons/icon3.png" alt="">
+                <span>動物送養媒合</span>
+            </a>
+            <a href="javascript:;" class="item">
+                <img src="./icons/icon4.png" alt="">
+                <span>公立收容所</span>
+            </a>
+            <a href="javascript:;" class="item">
+                <img src="./icons/icon5.png" alt="">
+                <span>客服</span>
+            </a>
+        </nav>
+        <!-- 廣告模塊 -->
+        <section class="ad">
+            <img src="./images/ad.jpeg" alt="">
+        </section>
+    </section>
+    <!-- 公告模塊 -->
+    <section class="content">
+        <div class="con-hd">
+            <h4>
+                <span class="icon"><img src="./icons/i1.jpeg" alt=""></span>
+                收容公告
+            </h4>
+            <a href="javascript:;" class="more">更多>></a>
+        </div>
+        <div class="con-bd">
+            <!-- Swiper -->
+            <div class="swiper-container con-bd-sw">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="javascript:;"><img src="./images/images1.jpeg" alt=""></a>
+                        <p>公告動物資料</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:;"><img src="./images/images2.jpeg" alt=""></a>
+                        <p>公告動物資料</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:;"><img src="./images/images3.jpeg" alt=""></a>
+                        <p>公告動物資料</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <!-- 領養模塊 -->
+    <section class="content pet-con">
+        <div class="con-hd">
+            <h4>
+                <span class="icon"><img src="./icons/i1.jpeg" alt=""></span>
+                動物認領養
+            </h4>
+            <a href="javascript:;" class="more">更多>></a>
+        </div>
+        <div class="pet">
+            <!-- Swiper -->
+            <div class="swiper mySwiper pet-sw">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/images1.jpeg" alt="">
+                        <h5>寵物狗</h5>
+                        <p>性別：公</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/images3.jpeg" alt="">
+                        <h5>寵物兔</h5>
+                        <p>性別：公</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <a href="javascript:;" class="item">
+            <img src="./icons/icon6.png" alt="">
+            <p>twitter</p>
+        </a>
+        <a href="javascript:;" class="item">
+            <img src="./icons/icon7.png" alt="">
+            <p>facebook</p>
+        </a>
+        <a href="javascript:;" class="item">
+            <img src="./icons/icon8.png" alt="">
+            <p>tel</p>
+        </a>
+        <a href="javascript:;" class="item">
+            <img src="./icons/icon9" alt="">
+            <p>mail</p>
+        </a>
+    </footer>
+    <script src="./js/flexible.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script>
+        (function () {
+            var swiper = new Swiper('.con-bd-sw', {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        })();
+        (function () {
+            var swiper = new Swiper(".pet-sw", {
+                slidesPerView: 2.5,
+                spaceBetween: 20,
+            });
+        })();
+    </script>
+</body>
+
+</html>
